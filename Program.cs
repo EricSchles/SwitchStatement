@@ -28,6 +28,23 @@ namespace SwitchStatement
                     break;
             }
 
+            Console.WriteLine("Do you enjoy C# ? (yes/no/maybe)");
+            string input = Console.ReadLine();
+            switch (input.ToLower())
+            {
+
+                case "yes":
+                case "maybe":
+                    Console.WriteLine("Alright!");
+                    break;
+                case "no":
+                    Console.WriteLine("pfft,w/e");
+                    break;
+                default:
+                    Console.WriteLine("This might be a personal failing, but I didn't understand you");
+                    break;
+            }
+
             Console.ReadLine();
         }
     }
